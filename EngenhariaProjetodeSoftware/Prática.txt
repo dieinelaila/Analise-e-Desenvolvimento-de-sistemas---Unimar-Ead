@@ -1,0 +1,126 @@
+Prática / Resolução 
+A Qualidade de Software está relacionada à Engenharia de Requisitos, pois os instrumentos de avaliação de qualidade serão aplicados, em parte, aos requisitos. Isso, com o intuito de conferir se eles foram totalmente atendidos, parcialmente ou não foram atendidos de forma alguma. Assim, suponha que um aluno seja um cliente que está requisitando o desenvolvimento de um sistema simples para controle financeiro, que contenha as seguintes funcionalidades:
+1.	- Manutenção de Receitas (inclusão, alteração, exclusão e consulta). Para tanto, cada receita deverá conter os seguintes dados: número de controle, descrição, data e valor;
+
+I. Manutenção de Receitas: 
+1. A funcionalidade de inclusão de receitas permite cadastrar todas as informações necessárias (número de controle, descrição, data e valor) de forma clara e intuitiva?
+2. A funcionalidade de alteração de receitas permite modificar os dados de forma correta e eficiente?
+3. A funcionalidade de exclusão de receitas remove corretamente os registros desejados?
+4. A funcionalidade de consulta de receitas apresenta os resultados de forma organizada e legível?
+5. A funcionalidade de consulta de receitas permite filtrar as receitas por período, descrição ou outros critérios relevantes?
+
+2.	- Manutenção de Despesas (inclusão, alteração, exclusão e consulta). Para tanto, cada despesa deverá conter os seguintes dados: número de controle, descrição, valor a pagar, data de vencimento, data de pagamento e valor pago;
+
+II. Manutenção de Despesas: 
+1. A funcionalidade de inclusão de despesas permite cadastrar todas as informações necessárias (número de controle, descrição, valor a pagar, data de vencimento, data de pagamento e valor pago) de forma clara e intuitiva?
+2. A funcionalidade de alteração de despesas permite modificar os dados de forma correta e eficiente?
+3. A funcionalidade de exclusão de despesas remove corretamente os registros desejados?
+4. A funcionalidade de consulta de despesas apresenta os resultados de forma organizada e legível?
+5. A funcionalidade de consulta de despesas permite filtrar as despesas por período, descrição ou outros critérios relevantes?
+
+
+
+
+
+3.	- Fluxo de Caixa (contas pagas, contas vencidas, balanço financeiro, etc.).
+
+III. Fluxo de Caixa: 
+1. O fluxo de caixa exibe corretamente as contas pagas e contas vencidas?
+2. O balanço financeiro apresenta as informações de forma clara e compreensível?
+3. O fluxo de caixa fornece um resumo adequado das receitas e despesas?
+4. É possível obter relatórios ou gráficos que auxiliem na análise do fluxo de caixa?
+5. O fluxo de caixa é atualizado de forma precisa e em tempo real?
+
+
+4.	Com a posse desses dados, se propõe a elaboração de uma avaliação de qualidade em relação ao software entregue, a fim de verificar se os requisitos foram atendidos. Dessa forma: 
+- Estabeleça um critério para avaliação. Por exemplo: "Sim ou não", "0 a 10", "1 a 5" e etc. 
+
+•	Após responder às questões/quesitos para cada funcionalidade do software, o avaliador deve atribuir uma pontuação de 1 a 5 para cada critério. Em seguida, é possível calcular a média das pontuações para obter uma avaliação geral da qualidade do software entregue para o controle financeiro.
+
+Critério de Avaliação: Escala de 1 a 5
+1 - Muito insatisfatório
+2 - Insatisfatório
+3 - Neutro
+4 - Satisfatório
+5 - Muito satisfatório
+
+I. Funcionalidade
+1. O software cumpre com todas as funcionalidades especificadas nos requisitos?
+2. As funcionalidades são intuitivas e fáceis de usar?
+3. As funcionalidades estão livres de erros e bugs?
+4. As funcionalidades atendem às necessidades e expectativas dos usuários?
+5. A documentação do software é clara e abrangente em relação às funcionalidades?
+
+
+
+II. Usabilidade
+1. A interface do software é bem projetada e intuitiva?
+2. O software é fácil de aprender a utilizar?
+3. As ações no software são executadas de forma rápida e eficiente?
+4. O software fornece feedback adequado ao usuário sobre suas ações?
+5. O software possui recursos de acessibilidade para usuários com necessidades especiais?
+
+III. Desempenho
+1. O software é rápido e responsivo?
+2. O software consome poucos recursos do sistema (memória, CPU, etc.)?
+3. O software lida de forma eficiente com grandes volumes de dados, se aplicável?
+4. O tempo de resposta do software é aceitável em todas as funcionalidades?
+5. O software é estável e não apresenta falhas ou travamentos frequentes?
+
+IV. Confiabilidade
+1. O software lida de forma adequada com situações de erro e exceção?
+2. O software é resistente a falhas e recupera-se de maneira apropriada?
+3. O software possui mecanismos de segurança adequados para proteger dados sensíveis?
+4. O software realiza backups e mantém a integridade dos dados?
+5. O software está em conformidade com as normas e regulamentações aplicáveis?
+
+V. Manutenibilidade
+1. O código do software é legível, organizado e bem estruturado?
+2. O software possui boa modularidade e reutilização de código?
+3. O software é facilmente modificável e extensível para atender a novos requisitos?
+4. O software possui uma arquitetura bem definida e documentada?
+5. O software permite realizar testes de unidade e integração de forma eficiente?
+
+VI. Documentação
+1. A documentação do software está completa e atualizada?
+2. A documentação fornece informações claras sobre a instalação e configuração do software?
+3. A documentação contém exemplos práticos de uso do software?
+4. A documentação está disponível em um formato adequado e acessível?
+5. A documentação auxilia na solução de problemas e dúvidas dos usuários?
+
+Após responder às questões/quesitos para cada funcionalidade do software, o avaliador deve atribuir uma pontuação de 1 a 5 para cada critério. Em seguida, é possível calcular a média das pontuações para obter uma avaliação geral da qualidade do software entregue.
+Uma vez definido o critério, seguem algumas sugestões de quesitos a serem avaliados: 
+
+1. MANUTENÇÃO DE RECEITAS 
+    1.1. Todos os dados requisitados estão disponíveis para cadastro; 
+    1.2. O número de controle não permite ser repetido; 
+    1.3. A descrição possui tamanho razoável para descrever a receita; 
+    1.4. A descrição e o valor são obrigatórios; 
+    1.5. A consulta permite a especificação de um período.
+2. GERENCIAMENTO DE ESTOQUE
+   2.1. O software registra corretamente as entradas e saídas de produtos no estoque;
+   2.2. O sistema possui alertas ou notificações para produtos com estoque baixo;
+   2.3. É possível realizar consultas de estoque por produto, categoria ou fornecedor;
+   2.4. O software permite a atualização de informações de estoque de forma rápida e precisa;
+   2.5. O software possui relatórios que fornecem informações sobre a situação atual do estoque.
+
+3. CONTROLE DE USUÁRIOS
+   3.1. O software possui um sistema de autenticação seguro;
+   3.2. É possível cadastrar novos usuários e atribuir níveis de acesso;
+   3.3. O sistema registra corretamente as ações realizadas por cada usuário;
+   3.4. As permissões de acesso são configuráveis e controladas adequadamente;
+   3.5. O software permite a exclusão de usuários de forma segura e controlada.
+
+4. GERAÇÃO DE RELATÓRIOS
+   4.1. O software permite a geração de relatórios personalizados de acordo com as necessidades do usuário;
+   4.2. Os relatórios são precisos, completos e apresentam as informações de forma clara;
+   4.3. É possível exportar os relatórios em formatos populares, como PDF ou Excel;
+   4.4. O sistema oferece opções de filtragem e ordenação dos dados nos relatórios;
+   4.5. A geração de relatórios é rápida e eficiente, sem atrasos significativos.
+
+5. SUPORTE TÉCNICO
+   5.1. O software possui um canal de suporte técnico para atendimento ao usuário;
+   5.2. O suporte técnico é responsivo e oferece soluções eficientes para os problemas relatados;
+   5.3. As solicitações de suporte são registradas e acompanhadas até a resolução;
+   5.4. O suporte técnico fornece orientações claras sobre a utilização do software;
+   5.5. O suporte técnico está disponível durante horários adequados e respeita os prazos de resposta estabelecidos.

@@ -1,0 +1,70 @@
+Suponha que um cliente lhe peça para modelar e criar um banco de dados para que futuramente, após estar pronto para uso, dados possam ser inseridos em uma outra etapa não contemplada nesta atividade.
+A ideia seria de se elaborar a parte conceitual do diagrama E-R para servir de base para a geração de script SQL para a criação do banco no SGBD MySQL, por exemplo seguindo os requisitos indicados no texto a seguir:
+O cliente solicitou que um cadastro de candidatos a vagas de trabalho fosse criado com base nos dados pessoais mais relevantes deles como CPF, nome, data de nascimento, formação, anos de experiência com o ramo do negócio, telefone de contato, e cargo pretendido e pretensão salarial, lembrando que todas as informações devem ser sempre preenchidas para o cadastro ser validado.
+Além do cadastro das pessoas, foi solicitado um cadastro de cargos e vagas da empresa contendo os atributos cargo, setor, faixa salarial, e quantidade de vagas.
+É importante definir os aspectos básicos do banco contendo estas duas tabelas para armazenamento desses conjuntos de entidades como chaves primárias e tipos de dados adequados para que o banco seja bem estruturado.
+
+
+
+Diagrama E-R
+
+O diagrama E-R abaixo representa o modelo conceitual do banco de dados para o cadastro de candidatos a vagas de trabalho.
+
+[Diagrama E-R]
+
+Tabelas
+
+O banco de dados terá duas tabelas:
+
+Candidato: Essa tabela armazenará as informações pessoais dos candidatos, como CPF, nome, data de nascimento, formação, anos de experiência, telefone de contato, cargo pretendido e pretensão salarial.
+Vaga: Essa tabela armazenará as informações sobre as vagas de trabalho disponíveis, como cargo, setor, faixa salarial e quantidade de vagas.
+Chaves primárias
+
+As chaves primárias das tabelas são:
+
+Candidato: CPF
+Vaga: ID da vaga
+Tipos de dados
+
+Os tipos de dados das colunas das tabelas são:
+
+Candidato:
+CPF: VARCHAR(11)
+Nome: VARCHAR(255)
+Data de nascimento: DATE
+Formação: VARCHAR(255)
+Anos de experiência: INT
+Telefone de contato: VARCHAR(15)
+Cargo pretendido: VARCHAR(255)
+Pretensão salarial: DECIMAL(10,2)
+Vaga:
+ID da vaga: INT
+Cargo: VARCHAR(255)
+Setor: VARCHAR(255)
+Faixa salarial: DECIMAL(10,2)
+Quantidade de vagas: INT
+Script SQL
+
+O seguinte script SQL criará o banco de dados e as tabelas:
+CREATE DATABASE cadastro_candidatos;
+
+USE cadastro_candidatos;
+
+CREATE TABLE candidato (
+    cpf VARCHAR(11) NOT NULL,
+    nome VARCHAR(255) NOT NULL,
+    data_nascimento DATE NOT NULL,
+    formacao VARCHAR(255) NOT NULL,
+    anos_experiencia INT NOT NULL,
+    telefone_contato VARCHAR(15) NOT NULL,
+    cargo_pretendido VARCHAR(255) NOT NULL,
+    salario_pretendido DECIMAL(10,2) NOT NULL,
+    PRIMARY KEY (cpf));
+
+CREATE TABLE 
+vaga (id_vaga INT NOT NULL AUTO_INCREMENT,
+    cargo VARCHAR(255) NOT NULL,
+    setor VARCHAR(255) NOT NULL,
+    faixa_salarial DECIMAL(10,2) NOT NULL,
+    quantidade_vagas INT NOT NULL,
+    PRIMARY KEY (id_vaga));

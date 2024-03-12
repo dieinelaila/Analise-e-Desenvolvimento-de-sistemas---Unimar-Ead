@@ -1,0 +1,85 @@
+PRATICA: 
+Vamos ajudar um aeroporto que tem um grande número de decolagens por dia, assim precisamos auxiliar os operadores, empresas aéreas, agências e passageiros à conferir as informações dos aviões que irão decolar. Nosso papel vai ser desenvolver um algoritmo de estrutura de dados em Python, esse algoritmo deve realizar o controle da pista de decolagem dos aviões nesse aeroporto, lembrando que o foco é garantir o controle dos dados e melhores informações as pessoas. Assim, nosso algoritmo deve contemplar alguns itens:
+a) Permitir a decolagem do primeiro avião na fila.
+b) Adicionar um avião na fila de decolagem.
+c) Mostrar o total de aviões aguardando na fila de colagem.
+d) Lista todos os aviões na fila de decolagem.
+e) Listar as características do próximo a decolar (o avião que está na frente da fila).
+f) Mostrar a posição de um avião conforme o número do voo.
+Obs: Cada avião deve ser representado por uma classe em Python e conter modelo do avião, empresa aérea, origem, destino, número de passageiros e número do voo.
+*ENVIE O TRABALHO EM PDF com os prints do sistema executando.
+	RESOLUÇÃO:
+
+class Aviao:
+    def __init__(self, modelo, empresa_aerea, origem, destino, num_passageiros, num_voo):
+        self.modelo = modelo
+        self.empresa_aerea = empresa_aerea
+        self.origem = origem
+        self.destino = destino
+        self.num_passageiros = num_passageiros
+        self.num_voo = num_voo
+
+class Aeroporto:
+    def __init__(self):
+        self.fila_decolagem = []
+
+    def adicionar_aviao(self, aviao):
+        self.fila_decolagem.append(aviao)
+
+    def decolar_proximo(self):
+        if self.fila_decolagem:
+            aviao_decolar = self.fila_decolagem.pop(0)
+            return aviao_decolar
+        else:
+            return None
+
+    def total_avioes_na_fila(self):
+        return len(self.fila_decolagem)
+
+    def listar_avioes_na_fila(self):
+        for aviao in self.fila_decolagem:
+            print(f"Voo {aviao.num_voo}: {aviao.empresa_aerea} {aviao.modelo}")
+
+    def proximo_a_decolar(self):
+        if self.fila_decolagem:
+            return self.fila_decolagem[0]
+        else:
+            return None
+
+    def posicao_por_num_voo(self, num_voo):
+        for i, aviao in enumerate(self.fila_decolagem):
+            if aviao.num_voo == num_voo:
+                return i + 1  # A posição é indexada em 1
+        return None
+
+# Exemplo de uso:
+if __name__ == "__main__":
+    aeroporto = Aeroporto()
+
+    # Adicionar aviões à fila de decolagem
+    aviao1 = Aviao("Boeing 737", "Airline A", "Cidade A", "Cidade B", 150, 101)
+    aviao2 = Aviao("Airbus A320", "Airline B", "Cidade X", "Cidade Y", 120, 102)
+    aeroporto.adicionar_aviao(aviao1)
+    aeroporto.adicionar_aviao(aviao2)
+
+    # Operações no aeroporto
+    print("Total de aviões na fila:", aeroporto.total_avioes_na_fila())
+    aeroporto.listar_avioes_na_fila()
+    
+    proximo = aeroporto.proximo_a_decolar()
+    if proximo:
+        print("Próximo a decolar:", proximo.modelo, proximo.num_voo)
+    else:
+        print("Não há aviões na fila para decolagem.")
+    
+    posicao = aeroporto.posicao_por_num_voo(102)
+    if posicao:
+        print(f"Posição do voo 102 na fila: {posicao}")
+    else:
+        print("Voo não encontrado na fila.")
+    
+    aviao_decolou = aeroporto.decolar_proximo()
+    if aviao_decolou:
+        print(f"O avião do voo {aviao_decolou.num_voo} decolou.")
+    else:
+        print("Não há aviões na fila para decolagem.")

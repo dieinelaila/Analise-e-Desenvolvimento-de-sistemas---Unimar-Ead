@@ -1,0 +1,95 @@
+PR1 – Prática 
+Elabore um cenário descritivo e, a partir dele, elabore os diagramas de Caso de Uso e de Classes. O cenário precisa estar bem elaborado para que seja possível identificar todas as ações que precisam estar no diagrama de caso de uso e as classes necessárias no diagrama de classes. 
+Descrição do Cenário 
+Diagrama de Casos de Uso
+Diagrama de Classes
+
+Resolução: 
+Descrição do Cenário:
+Pedir uma pizza por uma aplicativo:   
+1. Realizar Pedido:
+   - Cliente acessa o aplicativo pelo smartphone ou computador.
+   - O cliente deseja ver as opções de pizzas disponíveis. Ele consulta o cardápio para verificar as opções disponíveis.
+   - Em seguida, seleciona as pizzas desejadas e suas respectivas quantidades.
+   - O cliente confirma o pedido e fornece as informações necessárias, como nome, endereço de entrega e telefone de contato.
+   - O sistema registra o pedido e gera um número de identificação.
+
+2. Realizar Pagamento:
+   - Após a confirmação do pedido, o cliente precisa fazer o pagamento.
+   - Ele escolhe o método de pagamento, como dinheiro, cartão de crédito ou transferência bancária.
+   
+3.  Entregar Pedido:
+   - O pedido é preparado pelos funcionários da pizzaria.
+   - O entregador recebe o pedido pronto e suas informações de entrega.
+   - Ele se desloca até o endereço de entrega fornecido pelo cliente.
+   - O entregador realiza a entrega ao cliente.
+
+
+
+
+Diagrama de Casos de Uso da Pizzaria:
+Pizzaria: 
+•	Visualizar Cardápio
+•	Realizar Pedido
+•	Modificar Pedido
+•	Cancelar pedido
+•	Realizar Pagamento
+•	Entregar Pedido
+
+Ações identificadas no diagrama de casos de uso:
+•	Visualizar Cardápio: Permite ao cliente ver o cardápio com as opções de pizzas disponíveis.
+•	Realizar Pedido: Permite ao cliente fazer um pedido de pizza.
+•	Modificar Pedido: Permite ao cliente modificar o pedido antes de confirmar.
+•	Cancelar Pedido: Permite ao cliente cancelar o pedido.
+•	Realizar Pagamento: Permite ao cliente fazer o pagamento do pedido.
+•	Entregar Pedido: Permite ao entregador entregar o pedido ao cliente.
+
+
+Diagrama de Classes da Pizzaria:
+Pizzaria
+Classe "Pizzaria":
+Atributos: nome, endereço, telefone
+Métodos: realizarPedido(), calcularTotal(), entregarPedido()
+•	pedidos: List<Pedido>                
+•	cardapio: List<Pizza>
+•	realizarPedido()
+•	modificarPedido()
+•	cancelarPedido()
+•	visualizarCardapio()
+Cliente:
+Classe "Cliente":
+Atributos: nome, endereço, telefone, históricoPedidos
+Métodos: fazerPedido(), adicionarAoHistórico()
+•	nome: String
+•	endereco: String
+•	telefone: String
+•	fazerPedido()
+•	modificarPedido()
+•	cancelarPedido()
+
+Pedido: 
+Classe "Pedido":
+Atributos: cliente, pizzas, status, data
+Métodos: adicionarPizza(), removerPizza(), atualizarStatus()
+•	cliente: Cliente
+•	pizzas: List<Pizza>
+•	status: StatusPedido
+•	adicionarPizza(pizza: Pizza)
+•	removerPizza(pizza: Pizza)
+•	calcularTotal(): double
+
+Pizza:
+Classe "Pizza":
+Atributos: sabor, tamanho, ingredientes, preço
+Métodos: adicionarIngrediente(), removerIngrediente(), calcularPreço()
+•	nome: String
+•	ingredientes: List<String>
+•	preco: double
+•	getNome(): String
+•	getIngredientes(): List<String>
+•	getPreco(): double
+
+Entregador
+•	nome: String
+•	placaVeiculo: String
+•	entregarPedido (pedido: Pedido)

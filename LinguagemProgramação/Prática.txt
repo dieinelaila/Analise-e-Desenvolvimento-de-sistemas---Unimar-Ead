@@ -1,0 +1,29 @@
+Prática: 
+Resolução:
+Para a correção do código deve-se criar uma classe chamada Dados com os atributos nome e idade.
+ Além disso, adicionar um método chamado lerDados() que solicita ao usuário que insira o nome e a idade.
+Fazer um loop for, criamos objetos do tipo Dados e chamamos o método lerDados() para cada objeto, permitindo que o usuário insira os dados.
+Essa abordagem orientada a objetos encapsula os dados e o comportamento relacionados em uma única classe, tornando o código mais modular e organizado: 
+Código: 
+#include <iostream>
+#include <string>
+using namespace std;
+class Dados {
+public:
+    string nome;
+    int idade;
+    void lerDados() {
+        cout << "Nome: ";
+        cin >> nome;
+        cout << "Idade: ";
+        cin >> idade;
+    }
+};
+int main() {
+    int i;
+    Dados cadastro[3];
+    for (i = 0; i < 3; i++) {
+        cadastro[i].lerDados();
+    }
+    return 0;
+}

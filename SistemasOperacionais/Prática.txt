@@ -1,0 +1,31 @@
+PRATICA – SISTEMAS OPERACIONAIS
+DIEINE
+A virtualização é uma tecnologia que possibilita a criação de serviços relacionados à tecnologia da informação. Esse processo permite a utilização de uma máquina física em sua capacidade máxima, em que suas funcionalidades são distribuídas por diversos espaços e usuários. Podemos dizer, então, que se trata de uma metodologia que permite a um sistema operacional, ou parte dele, ser aplicado dentro de outros sistemas. Atualmente, é muito comum que as máquinas e os computadores contem com a possibilidade de hospedar mais de um sistema operacional simultaneamente, sem comprometer em nada o seu nível de performance. A virtualização, portanto, é a forma mais eficiente de reunir todos os softwares e as funcionalidades em apenas uma única máquina, facilitando o acesso, a usabilidade e a gestão.
+Semelhanças e diferenças com cloud computing
+Não é difícil confundir a virtualização com a cloud computing, mas as duas tecnologias possuem diferenças entre si. A computação em nuvem se caracteriza como uma forma de compartilhar softwares e dados por meio de uma plataforma on-line, e que, normalmente, possui modelo de assinatura. Enquanto isso, a virtualização é um software que aplica uma separação dos ambientes computacionais, reduzindo a necessidade de infraestrutura física para rodar todos os programas e sistemas.
+
+
+ATIVIDADE PRÁTICA
+Nesta matéria foi abordado a importância que a virtualização possui e de como ela pode ser benéfica para as organizações. Nesse sentido, propõe-se as seguintes questões:
+•	RESPONDA ao que se pede em cada questão.
+1 – Ao adotar a prática da virtualização, quais são os benefícios que se podem adotar com essa prática?
+A virtualização oferece uma série de benefícios para as organizações, incluindo:
+	Eficiência: A virtualização permite que as organizações maximizem o uso de sua infraestrutura de TI, reduzindo o desperdício de recursos.
+	Redução de custos: A virtualização pode ajudar as organizações a reduzir seus custos de TI, pois reduz a necessidade de hardware e software adicionais.
+	Flexibilidade: A virtualização permite que as organizações sejam mais flexíveis em suas operações, pois podem facilmente alterar a alocação de recursos de acordo com as necessidades.
+	Segurança: A virtualização pode ajudar as organizações a melhorar a segurança de seus dados, pois permite que eles sejam isolados uns dos outros.
+Alguns benefícios específicos da virtualização para os negócios incluem:
+	Redução de custos de capital: A virtualização pode ajudar as organizações a reduzir seus custos de capital, pois reduz a necessidade de comprar novos servidores e outros hardwares.
+	Redução de custos operacionais: A virtualização pode ajudar as organizações a reduzir seus custos operacionais, pois reduz a necessidade de manutenção e gerenciamento de hardware.
+	Melhoria da produtividade: A virtualização pode ajudar as organizações a melhorar a produtividade, pois permite que os usuários acessem os recursos de TI de forma mais rápida e fácil.
+	Melhoria da flexibilidade: A virtualização pode ajudar as organizações a melhorar a flexibilidade, pois permite que elas rapidamente provisionem e retirem recursos de TI conforme necessário.
+	Melhoria da segurança: A virtualização pode ajudar as organizações a melhorar a segurança, pois permite que elas isolem os dados e os aplicativos uns dos outros.
+
+2 - Ao decidir pelo processo de virtualização, quais são os tipos de virtualizações possíveis de serem aplicadas nos negócios?
+	Virtualização de servidor: A virtualização de servidor permite que vários sistemas operacionais sejam executados em um único servidor físico. Isso pode ajudar as organizações a reduzir seus custos de hardware e melhorar a eficiência de seus servidores.
+	Virtualização de desktop: A virtualização de desktop permite que os usuários acessem seus desktops de forma remota, de qualquer lugar com acesso à Internet. Isso pode ajudar as organizações a reduzir seus custos de espaço de escritório e melhorar a mobilidade de seus funcionários.
+	Virtualização de armazenamento: A virtualização de armazenamento permite que vários dispositivos de armazenamento sejam gerenciados como um único pool de recursos. Isso pode ajudar as organizações a melhorar a eficiência de seu armazenamento e reduzir seus custos de gerenciamento.
+Além desses três tipos principais, existem também outros tipos de virtualização que podem ser aplicados nos negócios, como:
+	Virtualização de rede: A virtualização de rede permite que várias redes virtuais sejam criadas em uma única rede física. Isso pode ajudar as organizações a melhorar a segurança e o desempenho de suas redes.
+	Virtualização de aplicativos: A virtualização de aplicativos permite que os aplicativos sejam executados em um ambiente virtual, independente do hardware ou do sistema operacional subjacente. Isso pode ajudar as organizações a melhorar a flexibilidade e a portabilidade de seus aplicativos.
+A escolha do tipo de virtualização mais adequado para uma organização dependerá das suas necessidades específicas.

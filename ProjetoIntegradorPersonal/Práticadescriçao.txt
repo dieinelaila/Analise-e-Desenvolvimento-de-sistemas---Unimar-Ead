@@ -1,0 +1,140 @@
+	Canvas Proposta de Valor: Os alunos devem criar um Canvas Proposta de Valor para
+Identificar os principais benefícios e propostas de valor do aplicativo para o personal trainer
+e seus alunos. _________________________
+
+•	Canvas Proposta de Valor 
+Produto para agendamento e gerenciamento para Personal Trainer
+Segmento de Clientes:
+
+- Personal trainers que desejam oferecer serviços online e alcançar um público maior.
+- Alunos interessados em treinamento personalizado e acompanhamento remoto.
+
+•	Propostas de Valor:
+1. Treinamento Personalizado: Fornecer programas de treinamento personalizados com base nas necessidades e metas de cada aluno.
+2. Acompanhamento Remoto: Permitir que os alunos recebam feedback e orientação contínua do personal trainer, mesmo à distância. Recursos de comunicação para tirar dúvidas e receber orientação personalizada.
+3. Flexibilidade de Horário: Oferecer a opção de treinar a qualquer hora e em qualquer lugar, de acordo com a disponibilidade do aluno.
+4. Variedade de Exercícios: Disponibilizar uma ampla gama de exercícios e atividades para atender diferentes preferências e objetivos.
+5. Registro e Acompanhamento de Progresso: Permitir que os alunos registrem seus treinos, acompanhem seu progresso e recebam análises detalhadas.
+6. Motivação e Engajamento: Fornecer recursos para manter os alunos motivados, como desafios, metas e recompensas. Notificações e lembretes para motivar os clientes e mantê-los engajados.
+7. Comunidade e Suporte: Criar um ambiente de comunidade onde os alunos possam interagir, compartilhar experiências e receber suporte mútuo.
+
+•	Canais de Distribuição:
+- Lojas de aplicativos (App Store, Google Play) para download e instalação.
+- Página na internet para divulgação do aplicativo e dos planos de treinamentos. 
+- Estratégias de marketing digital, como anúncios em redes sociais e conteúdo relevante em blogs e vídeos.
+-  Parcerias com personal trainers locais para promover o aplicativo aos seus clientes.
+
+
+
+
+•	Relacionamento com Clientes:
+- Suporte por chat, e-mail ou fórum para responder perguntas e solucionar problemas.
+- Notificações e comunicações regulares para manter os alunos engajados e informados sobre atualizações e novidades.
+
+•	Fontes de Receita:
+- Modelo de assinatura mensal ou anual para acesso Premium ao aplicativo e aos recursos adicionais.
+- Possibilidade de parcerias com marcas de equipamentos esportivos para promoções e descontos exclusivos.
+-  Oferta de planos de treinamento personalizados com um custo adicional.
+
+•	Recursos Principais:
+- Plataforma de aplicativo móvel (iOS, Android) para fornecer a interface do usuário e funcionalidades do aplicativo.
+- Banco de dados para armazenar informações de alunos, programas de treinamento e progresso.
+- Equipe de desenvolvimento e aprimoramento do aplicativo para manutenção, atualizações e melhorias contínuas do aplicativo, monitoramento e suporte técnico, atualização de conteúdo e exercícios disponíveis no aplicativo
+
+	Diagrama de Caso de Uso: Com base nas informações da entrevista, os alunos devem
+Desenvolver um Diagrama de Caso de Uso que represente as interações entre os atores. O
+Diagrama deve mostrar as principais funcionalidades do aplicativo. 
+
+1. Registrar-se como Personal Trainer: O personal trainer se registra no aplicativo fornecendo suas informações pessoais e credenciais de acesso.
+
+2. Registrar-se como Aluno: O aluno se registra no aplicativo fornecendo suas informações pessoais e preferências de treinamento.
+
+3. Criar Programa de Treinamento: O personal trainer cria um programa de treinamento personalizado para um aluno, incluindo exercícios, duração e intensidade.
+
+4. Acessar Programa de Treinamento: O aluno acessa o programa de treinamento criado pelo personal trainer e visualiza os exercícios e instruções.
+
+5. Registrar Treino: O aluno registra seu treino realizado, incluindo exercícios, séries, repetições e pesos.
+
+6. Visualizar Progresso: O aluno visualiza seu progresso com base nos registros de treinos, incluindo gráficos e estatísticas.
+
+7. Enviar Mensagem ao Personal Trainer: O aluno envia uma mensagem para o personal trainer, fazendo perguntas, solicitando orientações ou compartilhando informações.
+
+8. Receber Feedback do Personal Trainer: O personal trainer responde às mensagens dos alunos, fornecendo feedback, orientações e suporte.
+
+9. Configurar Notificações: O aluno configura as notificações do aplicativo para receber lembretes de treinos, atualizações do programa e mensagens do personal trainer.
+
+	Diagrama de Classes: Os alunos devem criar um Diagrama de Classes que represente as
+entidades e relacionamentos envolvidos no aplicativo, como personal trainer, alunos,
+sessões de treinamento, entre outros. O diagrama deve ajudar a visualizar a estrutura do
+sistema e suas principais classes. 
+
+
+%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%220..1%22%20style%3D%22resizable%3D0%3Balign%3Dleft%3BverticalAlign%3Dbottom%3BlabelBackgroundColor%3Dnone%3BfontSize%3D12%3BfillColor%3D%235D7F99%3BstrokeColor%3D%23D0CEE2%3BfontColor%3D%231A1A1A%3Brounded%3D1%3B%22%20connectable%3D%220%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22300%22%20y%3D%22380%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E
+
+Principais Classes e Relacionamentos:
+
+- Personal Trainer: Representa um personal trainer que utiliza o aplicativo. Possui atributos como nome, e-mail, senha, especialidades, entre outros.
+
+- Aluno: Representa um aluno que utiliza o aplicativo. Possui atributos como nome, e-mail, senha, metas de treinamento, entre outros.
+
+- Sessão de Treinamento: Representa uma sessão de treinamento criada pelo personal trainer para um aluno. Pode incluir atributos como data, duração, intensidade, exercícios, entre outros.
+
+
+
+
+	User Stories com Critérios de Aceite: Com base nas necessidades levantadas na
+entrevista, os alunos devem criar User Stories que descrevam as funcionalidades do
+aplicativo do ponto de vista dos usuários. Cada User Story deve incluir critérios de aceite
+claros e mensuráveis. 
+
+1. Como um personal trainer, quero criar um programa de treinamento personalizado para cada aluno, para atender às suas necessidades individuais.
+   Critérios de Aceite:
+   - Capacidade de criar programas de treinamento com exercícios, séries, repetições e intensidade específicos.
+   - Possibilidade de adicionar notas e instruções adicionais para cada exercício.
+   - Capacidade de salvar e editar os programas de treinamento existentes.
+
+2. Como um aluno, quero registrar meus treinos no aplicativo, para acompanhar meu progresso ao longo do tempo.
+   Critérios de Aceite:
+   - Possibilidade de adicionar detalhes do treino, como exercícios, séries, repetições e pesos utilizados.
+   - Capacidade de registrar a duração do treino e a intensidade percebida.
+   - Visualização do histórico de treinos anteriores e capacidade de editar ou excluir registros de treinos.
+
+3. Como um aluno, quero receber feedback do meu personal trainer sobre meus treinos e progresso, para obter orientações e motivação adicional.
+   Critérios de Aceite:
+   - Capacidade de enviar mensagens e receber respostas do personal trainer por meio do aplicativo.
+   - Possibilidade de compartilhar registros de treinos específicos para revisão e feedback do personal trainer.
+   - Recebimento de notificações quando o personal trainer fornece feedback ou enviar mensagens importantes.
+
+4. Como um aluno, quero acessar programas de treinamento anteriores e futuros, para me preparar adequadamente e acompanhar minha evolução.
+   Critérios de Aceite:
+   - Visualização de programas de treinamento anteriores, incluindo exercícios, séries e instruções.
+   - Capacidade de visualizar programas de treinamento futuros, para se preparar com antecedência.
+   - Disponibilização de um calendário de treinamento para uma visão geral dos próximos treinos.
+
+5. Como um aluno, quero configurar notificações para lembretes de treinos, para garantir que não perca nenhuma sessão de treinamento.
+   Critérios de Aceite:
+   - Opção de configurar notificações diárias ou semanais para lembrar os horários dos treinos.
+   - Capacidade de personalizar os horários e frequência das notificações.
+   - Recebimento de notificações quando um novo programa de treinamento é atribuído ou atualizado.
+
+	Backlog Ordenado pelas Prioridades: Os alunos devem montar um backlog com as User
+Stories, priorizando as funcionalidades mais importantes e que tragam maior valor ao
+personal trainer e seus alunos. O backlog deve ser ordenado de acordo com as prioridades
+definidas. 
+
+https://trello.com/b/9FeYHX4B/projeto-integrador
+
+1. Como um personal trainer, quero criar um programa de treinamento personalizado para cada aluno, para atender às suas necessidades individuais.
+   - Critérios de Aceite: Capacidade de criar programas de treinamento com exercícios, séries, repetições e intensidade específicos; adicionar notas e instruções adicionais para cada exercício; salvar e editar os programas de treinamento existentes.
+
+2. Como um aluno, quero registrar meus treinos no aplicativo, para acompanhar meu progresso ao longo do tempo.
+   - Critérios de Aceite: Possibilidade de adicionar detalhes do treino, como exercícios, séries, repetições e pesos utilizados; registrar a duração do treino e a intensidade percebida; visualização do histórico de treinos anteriores e capacidade de editar ou excluir registros de treinos.
+
+3. Como um aluno, quero receber feedback do meu personal trainer sobre meus treinos e progresso, para obter orientações e motivação adicional.
+   - Critérios de Aceite: Capacidade de enviar mensagens e receber respostas do personal trainer por meio do aplicativo; compartilhar registros de treinos específicos para revisão e feedback do personal trainer; recebimento de notificações quando o personal trainer fornecer feedback ou enviar mensagens importantes.
+
+4. Como um aluno, quero acessar programas de treinamento anteriores e futuros, para me preparar adequadamente e acompanhar minha evolução.
+   - Critérios de Aceite: Visualização de programas de treinamento anteriores, incluindo exercícios, séries e instruções; visualização de programas de treinamento futuros para se preparar com antecedência; disponibilização de um calendário de treinamento para uma visão geral dos próximos treinos.
+
+5. Como um aluno, quero configurar notificações para lembretes de treinos, para garantir que não perca nenhuma sessão de treinamento.
+   - Critérios de Aceite: Opção de configurar notificações diárias ou semanais para lembrar os horários dos treinos; personalização dos horários e frequência das notificações; recebimento de notificações quando um novo programa de treinamento é atribuído ou atualizado.

@@ -1,0 +1,25 @@
+PR1 – Prática – Fundamentos de Redes de computadores.
+Tema da Atividade: Alocação de Endereços IP para Dispositivos Domésticos
+Você está configurando a rede da sua casa e precisa atribuir endereços IP para dispositivos de sua família, como smartphones, computadores e tablets. 
+A rede utiliza um endereço IP inicial 192.168.1.0 com uma máscara de sub-rede 255.255.255.0.
+•	Realize os cálculos necessários para responder as questões abaixo:
+1 - Quantos dispositivos cada membro da família pode conectar à rede após a divisão?
+A máscara de sub-rede 255.255.255.0 significa que os últimos 8 bits do endereço IP são usados para identificar hosts individuais. Como cada endereço IP pode conter 256 valores diferentes, isso significa que cada sub-rede pode suportar até 256 - 2 = 254 dispositivos.
+A rede pode suportar até 254 dispositivos, pois 2^8 - 2 = 254.
+Para calcular quantos dispositivos cada membro da família pode conectar à rede após a divisão, precisamos saber quantos membros da família existem.
+ Supondo que haja 5 membros na família, cada um pode conectar até 254 / 5 = 50 dispositivos.
+2 - Qual será a nova máscara de sub-rede?
+A máscara de sub-rede determina quantos bits do endereço IP são usados para identificar a rede e quantos bits são usados para identificar o host. No caso atual, a máscara de sub-rede é 255.255.255.0, o que significa que os três primeiros octetos do endereço IP são usados para identificar a rede e o último octeto é usado para identificar o host.
+Para aumentar o número de dispositivos que podem ser conectados à rede, precisamos reduzir o número de bits usados para identificar a rede. Isso significa que aumentaremos o número de bits usados para identificar o host.
+Suponha que desejemos que cada membro da família possa conectar até 50 dispositivos. Para isso, precisamos usar 7 bits para identificar o host. Isso significa que a nova máscara de sub-rede será 255.255.254.0.
+
+3 - Liste os intervalos de endereços IP alocados para cada membro da família.
+Com a nova máscara de sub-rede 255.255.254.0, a rede terá 128 hosts disponíveis. Para cada membro da família, podemos alocar um intervalo de 16 hosts, começando no endereço IP 192.168.1.1.
+Portanto, os intervalos de endereços IP alocados para cada membro da família serão os seguintes:
+Membro 1: 192.168.1.1 - 192.168.1.16
+Membro 2: 192.168.1.17 - 192.168.1.32
+Membro 3: 192.168.1.33 - 192.168.1.48
+Membro 4: 192.168.1.49 - 192.168.1.64
+Membro 5: 192.168.1.65 - 192.168.1.80
+O endereço IP 192.168.1.0 é o endereço de rede e o endereço IP 192.168.1.255 é o endereço de broadcast.
+
